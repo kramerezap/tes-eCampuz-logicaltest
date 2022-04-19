@@ -1,0 +1,1 @@
+SELECT a.mhs_nama, c.mk_nama, max(b.nilai) FROM tb_mahasiswa a, tb_mahasiswa_nilai b, tb_matakuliah c WHERE a.mhs_id = b.mhs_id AND b.mk_id = c.mk_id AND c.mk_kode = "MK303" ORDER BY b.nilai DESC LIMIT 1;
